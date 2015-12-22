@@ -8,8 +8,8 @@ lazy val commonSettings = Seq(
   scalaVersion := "2.10.4"
 
 )
-//lazy val root = project.in( file(".") ).dependsOn( assemblyPlugin )
-lazy val project = Project ("Shashi_Spark_Projects" , file ("."))
+
+lazy val project = Project ("Scala_Spark_Projects" , file ("."))
   .settings(commonSettings: _*)
   .settings(baseAssemblySettings: _*)
   .settings(
@@ -20,6 +20,9 @@ lazy val project = Project ("Shashi_Spark_Projects" , file ("."))
     //offline := flase
     test in assembly := {},
 
+    /**
+     *  The following statements imports all the required dependent jars that are required for the entire application
+     */
     libraryDependencies +="org.apache.spark" %% "spark-core" % "1.5.0",
     libraryDependencies +="org.apache.spark" %% "spark-sql" % "1.5.0",
     libraryDependencies += "org.scalatest" %%"scalatest" % "2.2.4" % "test",
@@ -29,6 +32,10 @@ lazy val project = Project ("Shashi_Spark_Projects" , file ("."))
 //    mappings in Universal <+= (assembly in compile) map {
 //      jar => jar ->(jar.getName)}
 
+
+    /**
+     *  The following statements avoids any conflicts when same jars are imported multiple times from different packages.
+     */
       assemblyMergeStrategy in assembly := {
       case PathList("javax" , "serlvet" , xs @ _*) => MergeStrategy.last
       case PathList("org" , "apache", xs @ _*) => MergeStrategy.last
