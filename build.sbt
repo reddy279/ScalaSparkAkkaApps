@@ -9,7 +9,7 @@ lazy val commonSettings = Seq(
 
 )
 
-lazy val project = Project ("Scala_Spark_Projects" , file ("."))
+lazy val project = Project ("ScalaSparkApps" , file ("."))
   .settings(commonSettings: _*)
   .settings(baseAssemblySettings: _*)
   .settings(
