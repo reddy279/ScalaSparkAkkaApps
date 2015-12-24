@@ -29,7 +29,7 @@
           "fieldType": "Long"
         }
       ],
-      "file_location": " ",
+      "file_location":"${s3_files_location}",
       "db_tbl_name": " "
     }
   }

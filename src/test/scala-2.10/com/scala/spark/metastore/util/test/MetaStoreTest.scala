@@ -1,8 +1,9 @@
 package com.scala.spark.metastore.util.test
 
-import com.scala.spark.metasote.util.JsonExtractor
+
+import com.scala.spark.util.metastore.{MetaStore, JsonExtractor}
 import org.scalatest.{BeforeAndAfter, FlatSpec, Matchers}
-import com.scala.spark.metasote.util._
+
 
 
 class MetaStoreTest extends FlatSpec with Matchers with BeforeAndAfter {
@@ -16,10 +17,9 @@ class MetaStoreTest extends FlatSpec with Matchers with BeforeAndAfter {
 
 
   "A json Reader " should " be able to load the Json file " in {
-
-    val json=JsonExtractor.loadJsonFile[MetaStore]("src/resources/config/metastore.json")
-
-
+    val json:MetaStore=JsonExtractor.loadJsonFile[MetaStore]("src/test/resources/config")
+    json.metastore("employee").file_location shouldBe ("/tmp/shashi")
+    json.metastore("customer").file_format(0).fieldName shouldBe(Some("cust_name"))
   }
 
 
