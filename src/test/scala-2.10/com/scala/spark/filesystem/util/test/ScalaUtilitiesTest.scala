@@ -5,9 +5,6 @@ import org.scalatest.{BeforeAndAfter, FlatSpec, Matchers}
 
 class ScalaUtilitiesTest extends FlatSpec with Matchers with BeforeAndAfter {
 
-
-
-
   before {
 
   }
@@ -32,27 +29,34 @@ class ScalaUtilitiesTest extends FlatSpec with Matchers with BeforeAndAfter {
     val returnObject: Boolean = ScalaUtilities.isFileSystemFileExist("s3://shashi-s3/data/shashi.txt", "s3")
     returnObject shouldBe true
   }
-    /**
-     * Test case read the content of the Fils System files
-     */
 
-    " The method" should "read the content of the files" in {
-      val content :String = ScalaUtilities.getFSContent("s3://shashi-s3/data/shashi.txt")
-      content.contains("Suresh") should be (true)
-    }
+  /**
+   * Test case read the content of the Fils System files
+   */
+
+  " The method" should "read the content of the files" in {
+    val content: String = ScalaUtilities.getFSContent("s3://shashi-s3/data/shashi.txt")
+    content.contains("Suresh") should be(true)
+  }
 
   /**
    * A test on read and Write to file
    */
 
-   "The method " should "write the content to file " in {
-      val list:List[String] = List("Shashi","Chintu")
+  "The method " should "write the content to file " in {
+    val list: List[String] = List("Shashi", "Chintu")
 
-     ScalaUtilities.writeToFSFile("s3://shashi-s3/data/writeShashi.txt", list)
-     val content:String =ScalaUtilities.getFSContent("s3://shashi-s3/data/writeShashi.txt")
-     content.contains("Chintu") should be (true)
+    ScalaUtilities.writeToFSFile("s3://shashi-s3/data/writeShashi.txt", list)
+    val content: String = ScalaUtilities.getFSContent("s3://shashi-s3/data/writeShashi.txt")
+    content.contains("Chintu") should be(true)
+  }
 
+  /**
+   * A test to verify the dates
+   */
+  "The method " should "return yesterdays date" in {
+    ScalaUtilities.getDate(-1) should be("20151222")
+  }
 
-   }
 
 }

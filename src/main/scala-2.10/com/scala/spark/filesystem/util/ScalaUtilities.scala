@@ -2,6 +2,8 @@ package com.scala.spark.util
 
 import java.io.{OutputStreamWriter, BufferedWriter, InputStream, StringWriter}
 import java.net.URI
+import java.text.SimpleDateFormat
+import java.util.Calendar
 
 import org.apache.hadoop.conf.Configuration
 import org.apache.hadoop.fs.{FileStatus, FileSystem, Path}
@@ -36,8 +38,8 @@ object ScalaUtilities {
     try {
       logger.info("Reading AWS Environment Variabls from system")
       println("Reading AWS Environment Variabls from system")
-      val awsAccessKeyId: String = sys.env("AWS_ACCESS_KEY_ID")
-      val awsSecretAccessKey: String =sys.env("AWS_SECRET_ACCESS_KEY")
+      val awsAccessKeyId: String = "AKIAJ3YUCQDPWH5CXEUQ"//sys.env("AWS_ACCESS_KEY_ID")
+      val awsSecretAccessKey: String ="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"//sys.env("AWS_SECRET_ACCESS_KEY")
       println("awsAccessKeyId= " + awsAccessKeyId + "\n " + "awsSecretAccessKey= " + awsSecretAccessKey)
 
       if (awsAccessKeyId != null && awsSecretAccessKey != null) {
@@ -185,8 +187,19 @@ object ScalaUtilities {
     }
   }
 
+  /**
+   * Method return the date based on the number of dates +/-
+   * @param numOfDays
+   * @param format
+   * @return
+   */
+  def getDate(numOfDays:Int , format:String="yyyyMMdd"):String={
+    val dateFormat:SimpleDateFormat= new SimpleDateFormat(format)
+    val calendar= Calendar.getInstance()
+    calendar.add(Calendar.DATE, numOfDays)
+    dateFormat.format(calendar.getTime)
 
-
+  }
 
 
 

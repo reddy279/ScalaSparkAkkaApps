@@ -1,0 +1,36 @@
+{
+  "metastore": {
+    "employee": {
+      "file_format": [
+        {
+          "fieldName": "emp_name",
+          "fieldType": "String"
+        },
+        {
+          "fieldName": "emp_id",
+          "fieldType": "String"
+        }
+      ],
+      "file_location": "/tmp/shashi",
+      "db_tbl_name": ""
+    },
+    "customer": {
+      "file_format": [
+        {
+          "fieldName": "cust_name",
+          "fieldType": "String"
+        },
+        {
+          "fieldName": "cust_id",
+          "fieldType": "String"
+        },
+        {
+          "fieldName": "cust_income",
+          "fieldType": "Long"
+        }
+      ],
+      "file_location": "",
+      "db_tbl_name": ""
+    }
+  }
+}

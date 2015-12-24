@@ -28,6 +28,8 @@ lazy val project = Project ("ScalaSparkApps" , file ("."))
     libraryDependencies += "org.scalatest" %%"scalatest" % "2.2.4" % "test",
     libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.6.1" excludeAll ExclusionRule(organization ="javax.servlet"),
     libraryDependencies += "log4j" % "log4j" % "1.2.17",
+    libraryDependencies += "org.json4s" %% "json4s-jackson" % "3.2.10",
+    libraryDependencies += "org.json4s" %% "json4s-native" % "3.2.10",
 
 //    mappings in Universal <+= (assembly in compile) map {
 //      jar => jar ->(jar.getName)}
