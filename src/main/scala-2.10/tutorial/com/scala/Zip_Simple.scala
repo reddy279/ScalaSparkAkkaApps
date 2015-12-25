@@ -41,7 +41,7 @@ object Zip_Samples {
 
     val zip_tuple = list_first.zip(list_second)
     println(zip_tuple) //List((1,one), (2,two), (3,three))
-    val zipAll_tuple = list_first.zipAll(list_second, "missing", "ten")
+    val zipAll_tuple = list_first.zipAll(list_second, "fill the blank elements with", "ten")
     println(zipAll_tuple) //List((1,one), (2,two), (3,three), (4,ten), (5,ten))
 
 
