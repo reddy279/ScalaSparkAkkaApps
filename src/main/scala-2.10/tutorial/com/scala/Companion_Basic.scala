@@ -9,9 +9,6 @@ package tutorial.com.scala
  * corresponding class's runtime objects, but is available from a static context
  *
  * In Case , if it is written inside a class, it is available to instances of that class, but not from a static context.
- *
- *
- *
  */
 
 
