@@ -5,8 +5,10 @@
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.ivy2/cache/com.sun.jersey.contribs/jersey-guice/docs/jersey-guice-1.9-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.sun.jersey.contribs/jersey-guice/docs/jersey-guice-1.9-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.sun.jersey.contribs/jersey-guice/srcs/jersey-guice-1.9-sources.jar!/" />
       <root url="jar://$USER_HOME$/.ivy2/cache/com.sun.jersey.contribs/jersey-guice/srcs/jersey-guice-1.9-sources.jar!/" />
     </SOURCES>
   </library>

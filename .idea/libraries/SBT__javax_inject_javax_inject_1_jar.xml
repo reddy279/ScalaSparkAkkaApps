@@ -5,6 +5,7 @@
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.ivy2/cache/javax.inject/javax.inject/docs/javax.inject-1-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/javax.inject/javax.inject/docs/javax.inject-1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.ivy2/cache/javax.inject/javax.inject/srcs/javax.inject-1-sources.jar!/" />

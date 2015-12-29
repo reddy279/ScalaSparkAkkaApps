@@ -5,8 +5,10 @@
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.hadoop/hadoop-auth/docs/hadoop-auth-2.6.1-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.hadoop/hadoop-auth/docs/hadoop-auth-2.6.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.hadoop/hadoop-auth/srcs/hadoop-auth-2.6.1-sources.jar!/" />
       <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.hadoop/hadoop-auth/srcs/hadoop-auth-2.6.1-sources.jar!/" />
     </SOURCES>
   </library>

@@ -5,8 +5,10 @@
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.ivy2/cache/org.tachyonproject/tachyon-underfs-local/docs/tachyon-underfs-local-0.7.1-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.tachyonproject/tachyon-underfs-local/docs/tachyon-underfs-local-0.7.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.tachyonproject/tachyon-underfs-local/srcs/tachyon-underfs-local-0.7.1-sources.jar!/" />
       <root url="jar://$USER_HOME$/.ivy2/cache/org.tachyonproject/tachyon-underfs-local/srcs/tachyon-underfs-local-0.7.1-sources.jar!/" />
     </SOURCES>
   </library>

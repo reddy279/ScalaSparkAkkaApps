@@ -5,8 +5,10 @@
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.avro/avro/docs/avro-1.7.7-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.avro/avro/docs/avro-1.7.7-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.avro/avro/srcs/avro-1.7.7-sources.jar!/" />
       <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.avro/avro/srcs/avro-1.7.7-sources.jar!/" />
     </SOURCES>
   </library>

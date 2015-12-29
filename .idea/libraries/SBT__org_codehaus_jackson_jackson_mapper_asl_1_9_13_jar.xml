@@ -5,8 +5,10 @@
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/docs/jackson-mapper-asl-1.9.13-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/docs/jackson-mapper-asl-1.9.13-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/srcs/jackson-mapper-asl-1.9.13-sources.jar!/" />
       <root url="jar://$USER_HOME$/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/srcs/jackson-mapper-asl-1.9.13-sources.jar!/" />
     </SOURCES>
   </library>

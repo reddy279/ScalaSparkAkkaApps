@@ -5,8 +5,10 @@
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.ivy2/cache/net.razorvine/pyrolite/docs/pyrolite-4.4-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/net.razorvine/pyrolite/docs/pyrolite-4.4-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/net.razorvine/pyrolite/srcs/pyrolite-4.4-sources.jar!/" />
       <root url="jar://$USER_HOME$/.ivy2/cache/net.razorvine/pyrolite/srcs/pyrolite-4.4-sources.jar!/" />
     </SOURCES>
   </library>
