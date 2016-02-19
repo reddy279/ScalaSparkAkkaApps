@@ -16,7 +16,7 @@ lazy val project = Project("ScalaSparkApps", file("."))
   .settings(
 
     // resolvers += Resolver.defaultLocal,
-    // publishLocal := true ,
+// publishLocal := true ,
     // parallelExecution :=false,
     offline := true,
     test in assembly := {},
@@ -26,6 +26,7 @@ lazy val project = Project("ScalaSparkApps", file("."))
      */
     libraryDependencies += "org.apache.spark" %% "spark-core" % "1.5.0",
     libraryDependencies += "org.apache.spark" %% "spark-sql" % "1.5.0",
+    libraryDependencies += "org.apache.spark" %% "spark-launcher" % "1.5.0",
     libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.4" % "test",
     libraryDependencies += "org.apache.hadoop" % "hadoop-aws" % "2.6.1" excludeAll ExclusionRule(organization = "javax.servlet"),
     libraryDependencies += "log4j" % "log4j" % "1.2.17",

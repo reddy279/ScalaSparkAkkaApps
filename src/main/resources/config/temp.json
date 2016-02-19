@@ -1,0 +1,16 @@
+{
+  "marketingName": "MoneyColletion",
+  "events": [
+
+    {  "eventClass": "FileEvent"},
+    { "eventFilePath": "/Users/shashidharsreddy/ScalaSparkApps/src/main/resources/config"}
+
+  ],
+  "jobs": [
+    {
+      "jobClass": "SparkJob",
+      "jobname" : "MoneyColletion",
+      "jarPath" : "abc.jar"
+    }
+  ]
+}

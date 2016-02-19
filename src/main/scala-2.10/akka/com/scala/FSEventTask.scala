@@ -63,11 +63,15 @@ class FSEventTask(notifyActor: ActorRef) extends Runnable {
 
               case ENTRY_CREATE => if (path.toFile.isDirectory) {
                 watchDirRecursively(path)
+                logger.info("New file has been created and thus notify the actor about it.")
+                println( "New file has been created and thus notify the actor about it.")
+                notifyActor ! FileCreationNotificationEvent(relativePath.toString)
+
               }
 
-                logger.info("New file has been created and thus notify the actor about it.")
-println( "New file has been created and thus notify the actor about it.")
-                notifyActor ! FileCreationNotificationEvent(relativePath.toString)
+//                logger.info("New file has been created and thus notify the actor about it.")
+//                println( "New file has been created and thus notify the actor about it.")
+//                notifyActor ! FileCreationNotificationEvent(relativePath.toString)
 
               case ENTRY_DELETE =>
                 notifyActor ! FileDeletionEvent(path.toFile)

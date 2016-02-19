@@ -121,7 +121,7 @@ object ScalaUtilities {
           org.apache.commons.io.IOUtils.copy(inputStream, stringWriter)
           //org.apache.commons.io.IOUtils.copy(inputStream, stringWriter,"UTF-8")
           output = stringWriter.toString
-          println(output)
+          //println(output)
         }
       }
     } finally {
