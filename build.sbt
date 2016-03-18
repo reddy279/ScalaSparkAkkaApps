@@ -1,5 +1,5 @@
 //import AssemblyKeys._
-
+// lazy loading the values
 import sbt.Keys._
 
 
